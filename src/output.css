@@ -783,10 +783,7 @@ video {
   background-color: rgb(23 22 37 / var(--tw-bg-opacity));  
 } */
 
-.bg-custom {
-  background-image: url(/images/cyber_bg.jpg);
-  opacity: 1;
-}
+
 
 .bg-brand\/40{
   background-color: black
