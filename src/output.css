@@ -2289,50 +2289,54 @@ body {
 
 
 /* service */
-
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   width: 100%;
+  max-width: 1200px; /* Adjust maximum width as needed */
   margin: 0 auto;
+}
 
+.box {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1 0 30%; /* Adjust the flex basis for larger screens */
+  max-width: 400px;
+  min-height: 350px;
+  border-radius: 22px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+@media (max-width: 1224px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
   .box {
-    color: white;
-    padding: 20px;
-    text-align: center;
-    flex: 1 0 30%;
-    /* Adjust the flex basis for responsiveness */
-    max-width: 400px;
-    min-height: 350px;
-    border-radius: 22px;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
+      flex-basis: 45%; /* Two boxes per row on medium screens */
   }
+}
 
-  @media (max-width: 768px) {
-    .box {
-      flex-basis: 45%;
-      /* Adjust flex-basis for smaller screens */
-    }
+@media (max-width: 480px) {
+  .box {
+      flex-basis: 100%; /* One box per row on smaller screens */
   }
-
-  @media (max-width: 480px) {
-    .box {
-      flex-basis: 100%;
-      /* Full width on smaller screens */
-    }
-  }
+}
 
 
-  .box div {
-    z-index: 955;
-    text-align: left;
-    margin-left: 1.5rem;
-  }
 
-  .he2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.box div {
+  z-index: 955;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+.he2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
