@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-custom text-white flex flex-col justify-center items-center font-poppins">
+<body class="bg-custom bg-[#171625] text-white flex flex-col justify-center items-center font-poppins">
 
     <!-- Navigation Bar -->
     <nav id="bg-color"
@@ -29,7 +29,12 @@
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
+            <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+            </label>
         </ul>
+
 
         <!-- Hamburger menu for smaller devices -->
         <a href="javascript:void(0);" class="hamburger">
@@ -75,7 +80,7 @@
             <div class="responsive-container-block Container bottomContainer">
                 <div class="allText bottomText">
                     <p class="text-blk headingText">
-                    <h1 class="text-4xl font-semibold pt-2">
+                    <h1 class="text-4xl font-semibold pt-2 mrg">
                         About Me
                     </h1>
                     </p>
@@ -88,14 +93,15 @@
                         ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut. Congue in
                         dignissim tincidunt ut dolor eu. Mi, eget posuere vitae sed purus nisl lorem.
                     </p>
-                    <a>
-                        <button class="explore">
-                            View More
+                    <a href="#services">
+                        <button class="btn-23">
+                            <span class="text">Services</span>
+                            <span aria-hidden="" class="marquee">Services</span>
                         </button>
                     </a>
                 </div>
                 <div class="videoContainer">
-                    <img src="images/about_me.png" alt="" class="dotsImg image-block">
+                    <img src="images/3d-casual-life.png" alt="" class="dotsImg image-block">
                     <!-- <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls"
                         src="https://www.youtube.com/embed/svg%3E?">
                     </iframe> -->
@@ -526,10 +532,10 @@
     </script>
 
     <style>
-        .bg-custom {
-            background-image: url(/images/cyber_bg.jpg);
-            opacity: 1;
-        }
+        /* .bg-custom {
+                background-image: url(/images/cyber_bg.jpg);
+                opacity: 1;
+            } */
 
         .hamburger {
             position: absolute;
@@ -552,6 +558,10 @@
 
         /* Responsive Navigation Bar */
         @media (max-width: 1100px) {
+            .about_me {
+                padding: 0 20px;
+            }
+
             html {
                 font-size: 14px;
             }
@@ -566,9 +576,9 @@
                 justify-content: center;
                 align-items: center;
 
-                background-color: rgba(0, 0, 0, 0.8);
+                background-color: rgba(0, 0, 0, 0.85);
                 /* Semi-transparent black background */
-                backdrop-filter: blur(20px);
+                backdrop-filter: blur(30px);
 
                 /* Blurry effect */
                 position: absolute;
