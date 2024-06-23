@@ -1122,7 +1122,7 @@ video {
   padding-right: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 
@@ -1131,6 +1131,7 @@ video {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+  
 }
 
 @media (min-width: 1024px) {
@@ -2311,10 +2312,24 @@ body {
   opacity: 1;
 }
 
+.container-service{
+  min-height: 550px;
+  margin-bottom: 3rem;
+}
+
+.service-container-box{
+  position: relative;
+  background-color: rgba(232,232,232,0.4)
+}
+
 @media (max-width: 1224px) {
   .container{
     width: 90%;
   }
+  .service-container-box{
+    min-height: 500px;
+  }
+
 }
 @media (max-width: 768px) {
   .box {
@@ -2339,4 +2354,67 @@ body {
 .he2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+
+.fixed-size{
+  max-width: 290px;
+}
+#home{
+  margin-bottom: 3rem;
+}
+.he1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-conatiner-button {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center; /* Optional: Center the button */
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
 }
