@@ -2310,6 +2310,7 @@ body {
   border-radius: 22px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  position: relative;
 }
 
 .container-service{
@@ -2318,18 +2319,20 @@ body {
 }
 
 .service-container-box{
+  background-color: rgba(232,232,232,0.3);
+  min-height: 500px;
+}
+
+.service-container-box img{
+  width: 100px;
   position: relative;
-  background-color: rgba(232,232,232,0.4)
+  left: 1.5rem;
 }
 
 @media (max-width: 1224px) {
   .container{
     width: 90%;
   }
-  .service-container-box{
-    min-height: 500px;
-  }
-
 }
 @media (max-width: 768px) {
   .box {
@@ -2371,9 +2374,9 @@ body {
 .service-conatiner-button {
   position: absolute;
   bottom: 4rem;
-  width: 100%;
-  text-align: center; /* Optional: Center the button */
+  margin-top: 3rem;
 }
+
 
 .button {
   height: 50px;
