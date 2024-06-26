@@ -2329,9 +2329,15 @@ body {
   margin-bottom: 3rem;
 }
 
+
+
 .service-container-box {
   background-color: rgba(232, 232, 232, 0.3);
   min-height: 500px;
+}
+
+.project-container{
+  min-height: 450px;
 }
 
 .service-container-box img {
@@ -2455,6 +2461,9 @@ body {
 }
 
 
+
+
+/* project */
 
 .mt-8 {
   margin-top: 8rem
