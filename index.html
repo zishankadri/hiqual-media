@@ -21,7 +21,7 @@
 
     <!-- Navigation Bar -->
     <nav id="bg-color"
-        class="sticky top-0 left-0 z-10 flex justify-between items-center px-8 sm:px-32 py-4 sm:py-8 w-full backdrop-blur-lg">
+        class="absolute top-0 left-0 z-10 flex justify-between items-center px-8 sm:px-32 py-4 sm:py-8 w-full backdrop-blur-lg">
         <a href="#home" class="max-w-[50%]">
             <img src="./images/Union.svg" alt="Logo">
         </a>
@@ -46,7 +46,7 @@
 
 
     <!-- HOME -->
-    <div id="home" class="home-container h-[100vh] justify-center items-center gap-16 overflow-hidden">
+    <div id="home" class="home-container flex flex-col lg:flex-row lg:gap-16 h-[100vh] justify-center items-center gap-16 overflow-hidden">
 
         <!-- <img src="./images/3d-casual-life-guest-in-coffee-shop.png" alt="" class="responsive-image rounded-xl"> -->
 
@@ -73,7 +73,7 @@
 
             <div class="relative flex gap-8 pt-4">
                 <a href="" class="btn-home border-t w-full !border-blue-400">Book A Call</a>
-                <img src="./images/arrow.png" alt="" class="absolute top-8 right-0 translate-x-40 h-8 opacity-70">
+                <img src="./images/arrow.png" alt="" class="absolute top-8 right-0 translate-x-40 sm:translate-x-60 h-8 opacity-70 -rotate-[50deg]">
                 <!-- <img src="./images/arrow2.png" alt="" class="relative top-4 h-8 opacity-70"> -->
             </div>
         </div>
@@ -81,33 +81,29 @@
     </div> <!-- HOME -->
 
     <!-- about me  -->
-    <section class="home-container about_me">
-        <div class="" id="about-me">
-            <div class="flex items-start gap-8 lg:gap-16">
-                <img src="images/3d-casual-life.png" alt="" class="w-[50%]">
+    <div class="home-container flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
+        <img src="images/3d-casual-life.png" alt="" class="w-[50%]">
 
-                <div class="p-8 rounded-3xl border border-white/30 bg-white/5">
-                    <h1 class="text-4xl pt-2">
-                        About Me
-                    </h1>
-                    </p>
-                    <p class="mt-4">
-                        We build to your be spoke
-                    </p>
-                    <p class="my-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper
-                        suspendisse
-                        ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut. Congue in
-                        dignissim tincidunt ut dolor eu. Mi, eget posuere vitae sed purus nisl lorem.
-                    </p>
-                    <a href="#servicec" class="group btn-primary btn-23 inline-block cursor-pointer mt-4">
-                        <span class="text">Services </span>
-                        <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
-                    </a>
-                </div>
-            </div>
+        <div class="p-8 rounded-3xl border border-white/30 bg-white/5">
+            <h1 class="text-4xl pt-2">
+                About Me
+            </h1>
+            </p>
+            <p class="mt-4">
+                We build to your be spoke
+            </p>
+            <p class="my-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper
+                suspendisse
+                ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut. Congue in
+                dignissim tincidunt ut dolor eu. Mi, eget posuere vitae sed purus nisl lorem.
+            </p>
+            <a href="#services" class="group btn-primary btn-23 inline-block cursor-pointer mt-4">
+                <span class="text">Services </span>
+                <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
+            </a>
         </div>
-    </section>
+    </div>
 
     <!-- !about me -->
 
@@ -117,113 +113,105 @@
     <!-- SERVICES -->
     <div class="home-container !flex-col service-box" id="services">
         <div class="text-center">
-
-            <h1 class="text-4xl font-semibold pt-2 mt-7">
+            <h1 class="text-4xl mt-24">
                 Services
             </h1>
         </div>
     </div>
 
-    <div class="container container-service">
-        <!-- Column 1 -->
-        <div class="column">
-            <!-- web design -->
-            <div class="service-box service-container-box">
-                <img src="images/Web Development.png" alt="">
-                <div>
-                    <h1 class="he1">Web Design & Development</h1>
-                </div>
-                <div>
-                    <p>
-                        Best if you need beautiful design & rapid development on a regular basis.
-                    </p>
-                </div>
-                <div class="service-conatiner-button">
-                    <button class="button type1">
-                        <span class="btn-txt">Learn More ></span>
-                    </button>
-                </div>
+    <div class="home-container px-16 grid grid-cols-2 gap-4 mt-8 max-w-[1600px]">
+        <!-- web design -->
+        <div class="services-container">
+            <img src="images/Web Development.png" alt="">
+            <div>
+                <h1 class="text-4xl">Web Design & Development</h1>
             </div>
-
-            <!-- web management -->
-            <div class="service-box service-container-box">
-                <img src="images/Web Development.png" alt="">
-                <div>
-                    <h1 class="he1">CRM and application development</h1>
-                </div>
-                <div>
-                    <p>
-                        Best if you have a website but struggling with growth and maintenance.
-                    </p>
-                </div>
-                <div class="service-conatiner-button">
-                    <button class="button type1">
-                        <span class="btn-txt">Learn More ></span>
-                    </button>
-                </div>
+            <div>
+                <p>
+                    Best if you need beautiful design & rapid development on a regular basis.
+                </p>
+            </div>
+            <div class="service-conatiner-button">
+                <button class="button type1">
+                    <a class="btn-primary mt-4">Learn More ></a>
+                </button>
             </div>
         </div>
 
-        <!-- Column 2 -->
-        <div class="column">
-            <!-- system management -->
-            <div class="service-box service-container-box">
-                <img src="images/Website Management.png" alt="">
-                <div>
-                    <h1 class="he1">Website Management</h1>
-                </div>
-                <div>
-                    <p>
-                        We take pride in our design quality, creating custom and innovative designs that differentiate
-                        you
-                        from your competitors.
-                    </p>
-                </div>
-                <div class="service-conatiner-button">
-                    <button class="button type1">
-                        <span class="btn-txt">Learn More ></span>
-                    </button>
-                </div>
+        <!-- web management -->
+        <div class="services-container">
+            <img src="images/Web Development.png" alt="">
+            <div>
+                <h1 class="text-4xl">CRM and application development</h1>
             </div>
+            <div>
+                <p>
+                    Best if you have a website but struggling with growth and maintenance.
+                </p>
+            </div>
+            <div class="service-conatiner-button">
+                <button class="button type1">
+                    <span class="btn-primary">Learn More ></span>
+                </button>
+            </div>
+        </div>
 
+        <!-- system management -->
+        <div class="services-container">
+            <img src="images/Website Management.png" alt="">
+            <div>
+                <h1 class="text-4xl">Website Management</h1>
+            </div>
+            <div>
+                <p>
+                    We take pride in our design quality, creating custom and innovative designs that differentiate
+                    you
+                    from your competitors.
+                </p>
+            </div>
+            <div class="service-conatiner-button">
+                <button class="button type1">
+                    <span class="btn-primary">Learn More ></span>
+                </button>
+            </div>
+        </div>
 
-            <div class="service-box service-container-box">
-                <img src="images/Website Management.png" alt="">
-                <div>
-                    <h1 class="he1">Website Management</h1>
-                </div>
-                <div>
-                    <p>
-                        We take pride in our design quality, creating custom and innovative designs that differentiate
-                        you
-                        from your competitors.
-                    </p>
-                </div>
-                <div class="service-conatiner-button">
-                    <button class="button type1">
-                        <span class="btn-txt">Learn More ></span>
-                    </button>
-                </div>
+        <!-- Website Management -->
+        <div class="services-container">
+            <img src="images/Website Management.png" alt="">
+            <div>
+                <h1 class="text-4xl">Website Management</h1>
+            </div>
+            <div>
+                <p>
+                    We take pride in our design quality, creating custom and innovative designs that differentiate
+                    you
+                    from your competitors.
+                </p>
+            </div>
+            <div class="service-conatiner-button">
+                <button class="button type1">
+                    <span class="btn-primary">Learn More ></span>
+                </button>
             </div>
         </div>
     </div>
 
 
-    <div class="home-container !flex-col service-box" id="services">
+    <div class="home-container flex-col service-box" id="services">
         <div class="text-center">
-
-            <h1 class="text-4xl font-semibold pt-2 mt-7">
+            <h1 class="text-4xl mt-24">
                 why choose us
             </h1>
         </div>
     </div>
 
-    <div class="container mt-3">
+    <div class="home-container grid grid-cols-3 mt-8 gap-5">
         <!-- diamond -->
         <div class="box">
             <img src="images/diamond-dark-mode--unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -237,7 +225,7 @@
         <div class="box">
             <img src="images/clock-ldark-mode-unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -251,7 +239,7 @@
         <div class="box">
             <img src="images/drop-dark-mode-unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -265,7 +253,7 @@
         <div class="box">
             <img src="images/file-dark-mode-unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -279,7 +267,7 @@
         <div class="box">
             <img src="images/saving-dark-mode--unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -293,7 +281,7 @@
         <div class="box">
             <img src="images/customer-dark-mode-unscreen.gif" alt="">
             <div>
-                <h2 class="he2">Top-notch quality</h2>
+                <h2 class="text-2xl">Top-notch quality</h2>
             </div>
             <div>
                 <p>
@@ -311,38 +299,49 @@
     <div class="home-container !flex-col service-box" id="Project">
         <div class="text-center">
 
-            <h1 class="text-4xl font-semibold pt-2 mt-7">
-                Work sample !
+            <h1 class="text-4xl mt-24">
+                Work samples !
             </h1>
         </div>
     </div>
 
 
-    <div class="container ">
+    <div class="home-container w-full grid grid-cols-3 gap-5 mt-8">
 
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+        <div class="project-box group">
+            <div>
+                <img src="images/MergedImages.jpg" alt="">
+            </div>
         </div>
 
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages (2).png" alt="">
+        <div class="project-box project-img service-container-box project-container">
+            <div>
+                <img src="images/MergedImages (2).png" alt="">
+            </div>
         </div>
 
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages (2).png" alt="">
+        <div class="project-box project-img service-container-box project-container">
+            <div>
+                <img src="images/MergedImages (2).png" alt="">
+            </div>
         </div>
 
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages (2).png" alt="">
+        <div class="project-box project-img service-container-box project-container">
+            <div>
+                <img src="images/MergedImages (2).png" alt="">
+            </div>
         </div>
 
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages (2).png" alt="">
+        <div class="project-box project-img service-container-box project-container">
+            <div>
+                <img src="images/MergedImages (2).png" alt="">
+            </div>
         </div>
 
-
-        <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages (2).png" alt="">
+        <div class="project-box project-img service-container-box project-container">
+            <div>
+                <img src="images/MergedImages (2).png" alt="">
+            </div>
         </div>
 
     </div>
@@ -351,8 +350,7 @@
 
 
     <!-- TESTIMONIALS -->
-    <div class="home-container !flex-col" id="testimonials">
-
+    <div class="home-container mt-24" id="testimonials">
 
         <h3 class="text-4xl mb-6 md:mb-8 text-center headings-weight text-dark-100 dark:text-grey-500">
             What they say about us</h3>
@@ -401,10 +399,10 @@
             keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
         </script>
 
-        <section class="rounded-xl -purple-400/10 text-white">
+        <section class="rounded-xl -purple-400/10 text-white ">
             <div
                 class="mx-auto max-w-[1340px] px-4 py-8 sm:px-6 lg:me-0 lg:py14 lg:pe-0 lg:ps-8 xl:py-22 overflow-hidden">
-                <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
+                <div class="translate-x-[25%] grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
 
 
                     <div class="-mx-6 lg:col-span-2 lg:mx-0">
@@ -553,70 +551,73 @@
     </div> <!-- Testimonials -->
 
 
-
-
     <!-- CONTACT -->
-
-    <div id="contact" class="contact-box">
+    <div id="contact" class="">
         <div
-            class="contact mt-9 rounded-2xl px-6 md:px-8 lg:px-10 w-full py-16 md:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 bg-blue-100">
+            class="contact mt-9 bg-gray-200 text-gray-700 rounded-3xl px-6 md:px-8 lg:px-10 w-full py-16 md:py-20 lg:py-24 flex flex-col justify-center items-center gap-10">
             <h3
-                class="font-semibold text-center text-grey-500 dark:text-dark-200 max-w-[1011px] md:text-5xl lg:text-6xl leading-tight">
+                class="text-center text-grey-700 dark:text-dark-200 max-w-[1011px] md:text-5xl lg:text-6xl leading-tight">
                 Simplify your web design & development with our services
             </h3>
             <a rel="noreferrer" href="https://calendly.com/chougleanas32/targeted-growth-marketing-web-development"
-                class="btn flex items-center justify-center gap-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
+                class="btn-primary !bg-black/70 hover:!bg-black/80">
                 Book a Call
-                <span>
-                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1.5L5 5L1.5 8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    </svg>
-                </span>
+                <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
             </a>
         </div>
 
     </div>
 
-
-
-    <!-- CONTACT -->
-
     <!-- FOOTER -->
-    <div class="footer-class">
-        <footer class=" footer">
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
+    <div class="home-container w-full">
+        <footer class="bg-brand-dark">
+            <div class="flex w-full p-8 justify-between mt-8 h-full">
+                <a href="/" class="flex items-center self-center max-w-[20%]"> <img src="{% static "images/logo.png" %}" alt="" class=""> </a>
+    
+                <ul class="flex flex-col gap-2 font-light">
+                    <h2 class="font-medium">Pages</h2>
+    
+                    <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about-me">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#Project">Project</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#testimonials">Testimonial</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+    
+                </ul>
+    
+                <div class="flex flex-col gap-4 font-light">
+                    <h2 class="font-medium">Contact</h2>
+                    <div> <i class="fa-solid fa-phone w-6 text-center"></i> 000-000-000 </div>
+                    <div> <i class="fa-solid fa-envelope w-6 text-center"></i> example@gmail.com </div>
+                    <div> <i class="fa-solid fa-location-dot w-6 text-center"></i> Mumbai, Maharashtra, India </div>
+                </div>
+    
+                <div class="flex gap-2 h-full mt-auto">
+                    <a href="https://www.instagram.com/" class="text-2xl hover:bg-gray-800 border border-gray-700 aspect-square w-14 rounded-full flex justify-center items-center">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="/" class="text-2xl hover:bg-gray-800 border border-gray-700 aspect-square w-14 rounded-full flex justify-center items-center">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="/" class="text-2xl hover:bg-gray-800 border border-gray-700 aspect-square w-14 rounded-full flex justify-center items-center">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="/" class="text-2xl hover:bg-gray-800 border border-gray-700 aspect-square w-14 rounded-full flex justify-center items-center">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-            <ul class="social-icon">
-                <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a></li>
-                <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></li>
-                <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a></li>
-                <li class="social-icon__item"><a class="social-icon__link" href="#">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a></li>
-            </ul>
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
-                <li class="menu__item"><a class="menu__link" href="#about-me">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
-                <li class="menu__item"><a class="menu__link" href="#Project">Project</a></li>
-                <li class="menu__item"><a class="menu__link" href="#testimonials">Testimonial</a></li>
-                <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
-
-            </ul>
-
-            <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
-        </footer>
+    
+            <div class="flex flex-col items-center">
+                <p>
+                    &copy;2024 Nadine Coelho | All Rights Reserved
+                </p>
+                <p>
+                    All Right Reserved.
+                </p>
+            </div>
+        </footer>        
     </div>
     <!-- FOOTER -->
 
