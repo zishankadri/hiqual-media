@@ -11,6 +11,7 @@
     <link href="./fontawsome/css/fontawesome.css" rel="stylesheet">
     <link href="./fontawsome/css/brands.css" rel="stylesheet">
     <link href="./fontawsome/css/solid.css" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.5/build/player/lottie.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -20,7 +21,7 @@
 
     <!-- Navigation Bar -->
     <nav id="bg-color"
-        class="absolute top-0 left-0 flex justify-between items-center px-8 sm:px-32 py-4 sm:py-8 w-full">
+        class="sticky top-0 left-0 z-10 flex justify-between items-center px-8 sm:px-32 py-4 sm:py-8 w-full backdrop-blur-lg">
         <a href="#home" class="max-w-[50%]">
             <img src="./images/Union.svg" alt="Logo">
         </a>
@@ -32,10 +33,6 @@
             <li><a href="#Project" class="nav-link">Project</a></li>
             <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
-            <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-            </label>
         </ul>
 
 
@@ -49,30 +46,34 @@
 
 
     <!-- HOME -->
-    <div id="home" class="home-container h-[100vh] justify-center items-center gap-16 bg">
+    <div id="home" class="home-container h-[100vh] justify-center items-center gap-16 overflow-hidden">
 
-        <img src="./images/3d-casual-life-guest-in-coffee-shop.png" alt="" class="responsive-image rounded-xl">
+        <!-- <img src="./images/3d-casual-life-guest-in-coffee-shop.png" alt="" class="responsive-image rounded-xl"> -->
 
-        <div class="flex flex-col gap-8 items-start">
-            <h1 class="relative text-6xl font-extrabold text-gray-300">
-                <span class="text-3xl">
-                    Hello, <br>
+        <div class="flex flex-col gap-8 items-center ">
+            <div 
+                class="absolute w-[20%] aspect-square bg-cyan-400/60 top-0 left-0 translate-x-[-20%] translate-y-[-20%] blur-3xl rounded-full -z-10">
+            </div>
+            <div 
+                class="absolute w-[20%] aspect-square bg-purple-400/60 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
+            </div>
+            <h1 class="relative text-6xl text-gray-300">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+                    Solutions.
+                    Designs.
+                    Innovation.
                 </span>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
-                    I am Anas!
-                </span>
-                <!-- <img src="./images/circle.png" alt="" class="absolute right-[1ch] bottom-[-50%] w-[3ch] opacity-75"> -->
             </h1>
 
             <div class="fixed-size">
-                <p class="text-gray-300" id="typing-effect">
+                <p class="text-gray-300 w-[30ch] max-w-[30ch] lg:w-[50ch] lg:max-w-[50ch]" id="typing-effect">
                     Enhancing Digital Footprints: A Social Media Marketing And Web Designing Professional
                 </p>
             </div>
 
-            <div class="flex gap-8 pt-4">
+            <div class="relative flex gap-8 pt-4">
                 <a href="" class="btn-home border-t w-full !border-blue-400">Book A Call</a>
-                <img src="./images/arrow.png" alt="" class="relative top-4 h-8 opacity-70">
+                <img src="./images/arrow.png" alt="" class="absolute top-8 right-0 translate-x-40 h-8 opacity-70">
                 <!-- <img src="./images/arrow2.png" alt="" class="relative top-4 h-8 opacity-70"> -->
             </div>
         </div>
@@ -80,34 +81,29 @@
     </div> <!-- HOME -->
 
     <!-- about me  -->
-    <section class="about_me">
-        <div class="responsive-container-block bigContainer about-custom" id="about-me">
+    <section class="home-container about_me">
+        <div class="" id="about-me">
+            <div class="flex items-start gap-8 lg:gap-16">
+                <img src="images/3d-casual-life.png" alt="" class="w-[50%]">
 
-            <div class="responsive-container-block Container bottomContainer">
-                <div class="allText bottomText">
-                    <p class="text-blk headingText">
-                    <h1 class="text-5xl pt-2 mrg">
+                <div class="p-8 rounded-3xl border border-white/30 bg-white/5">
+                    <h1 class="text-4xl pt-2">
                         About Me
                     </h1>
                     </p>
-                    <p class="text-blk subHeadingText">
+                    <p class="mt-4">
                         We build to your be spoke
                     </p>
-                    <p class="text-blk description">
+                    <p class="my-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper
                         suspendisse
                         ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut. Congue in
                         dignissim tincidunt ut dolor eu. Mi, eget posuere vitae sed purus nisl lorem.
                     </p>
-                    <a href="#services">
-                        <button class="btn-23">
-                            <span class="text">Services</span>
-                            <span aria-hidden="" class="marquee">Services</span>
-                        </button>
+                    <a href="#servicec" class="group btn-primary btn-23 inline-block cursor-pointer mt-4">
+                        <span class="text">Services </span>
+                        <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
                     </a>
-                </div>
-                <div class="videoContainer">
-                    <img src="images/3d-casual-life.png" alt="" class="dotsImg image-block">
                 </div>
             </div>
         </div>
@@ -151,7 +147,7 @@
 
             <!-- web management -->
             <div class="service-box service-container-box">
-                <img src="images/.png" alt="">
+                <img src="images/Web Development.png" alt="">
                 <div>
                     <h1 class="he1">CRM and application development</h1>
                 </div>
@@ -192,7 +188,7 @@
 
 
             <div class="service-box service-container-box">
-                <img src="images/drop-dark-mode-unscreen.gif" alt="">
+                <img src="images/Website Management.png" alt="">
                 <div>
                     <h1 class="he1">Website Management</h1>
                 </div>
@@ -212,6 +208,15 @@
         </div>
     </div>
 
+
+    <div class="home-container !flex-col service-box" id="services">
+        <div class="text-center">
+
+            <h1 class="text-4xl font-semibold pt-2 mt-7">
+                why choose us
+            </h1>
+        </div>
+    </div>
 
     <div class="container mt-3">
         <!-- diamond -->
@@ -320,24 +325,24 @@
         </div>
 
         <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+            <img src="images/MergedImages (2).png" alt="">
         </div>
 
         <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+            <img src="images/MergedImages (2).png" alt="">
         </div>
 
         <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+            <img src="images/MergedImages (2).png" alt="">
         </div>
 
         <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+            <img src="images/MergedImages (2).png" alt="">
         </div>
 
 
         <div class="box project-img service-container-box project-container">
-            <img src="images/MergedImages.jpg" alt="">
+            <img src="images/MergedImages (2).png" alt="">
         </div>
 
     </div>
@@ -615,17 +620,10 @@
     </div>
     <!-- FOOTER -->
 
-
- 
-
-
-
-
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        // typing effect    
+        // typing effect
 
         function typeWriter(textElement, text, speed) {
             let i = 0;
