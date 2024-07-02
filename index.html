@@ -52,10 +52,10 @@
 
         <div class="flex flex-col gap-8 items-center ">
             <div 
-                class="absolute w-[20%] aspect-square bg-cyan-400/60 top-0 left-0 translate-x-[-20%] translate-y-[-20%] blur-3xl rounded-full -z-10">
+                class="absolute w-[20%] aspect-square bg-purple-400/40 top-0 left-0 translate-x-[-20%] translate-y-[-20%] blur-3xl rounded-full -z-10">
             </div>
             <div 
-                class="absolute w-[20%] aspect-square bg-purple-400/60 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
+                class="absolute w-[20%] aspect-square bg-cyan-400/40 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
             </div>
             <h1 class="relative text-6xl text-gray-300">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
@@ -66,27 +66,46 @@
             </h1>
 
             <div class="fixed-size">
-                <p class="text-gray-300 w-[30ch] max-w-[30ch] lg:w-[50ch] lg:max-w-[50ch]" id="typing-effect">
+                <p class="text-gray-300 text-lg text-center w-[30ch] max-w-[30ch] lg:w-[50ch] lg:max-w-[50ch]" id="typing-effect">
                     Enhancing Digital Footprints: A Social Media Marketing And Web Designing Professional
                 </p>
             </div>
 
             <div class="relative flex gap-8 pt-4">
-                <a href="" class="btn-home border-t w-full !border-blue-400">Book A Call</a>
-                <img src="./images/arrow.png" alt="" class="absolute top-8 right-0 translate-x-40 sm:translate-x-60 h-8 opacity-70 -rotate-[50deg]">
+                <a href="" class="btn-home !text-base border-t w-full !border-blue-400">Book A Call</a>
+                <img src="./images/arrow.png" alt="" class="absolute top-8 right-0 translate-x-40 translate-y-8 rotate-12 h-8 opacity-70">
                 <!-- <img src="./images/arrow2.png" alt="" class="relative top-4 h-8 opacity-70"> -->
             </div>
         </div>
 
     </div> <!-- HOME -->
 
-    <!-- about me  -->
-    <div class="home-container flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
+    <div class="home-container relative -top-24 flex gap-8 w-full items-start">
+        <div class="grid grid-cols-3 gap-4 w-full">
+            <div class="tech-card"> Django </div>
+            <div class="tech-card"> Node JS </div>
+            <div class="tech-card"> React </div>
+            <div class="tech-card"> Django </div>
+            <div class="tech-card"> SQL </div>
+            <div class="tech-card"> PostgreSQL </div>
+            <div class="tech-card"> Tailwind CSS </div>
+            <div class="tech-card"> SK-learn </div>
+            <div class="tech-card"> Angular </div>
+
+        </div>
+        <div class="w-[40%]">
+            <h1 class="text-4xl">Technologies We Use</h1>
+            <p class="text-gray-400 mt-8">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
+        </div>
+    </div>
+
+    <!-- about us  -->
+    <div class="home-container flex flex-col lg:flex-row items-start gap-8 lg:gap-16 mt-24">
         <img src="images/3d-casual-life.png" alt="" class="w-[50%]">
 
         <div class="p-8 rounded-3xl border border-white/30 bg-white/5">
             <h1 class="text-4xl pt-2">
-                About Me
+                About Us
             </h1>
             </p>
             <p class="mt-4">
@@ -399,16 +418,14 @@
             keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
         </script>
 
-        <section class="rounded-xl -purple-400/10 text-white ">
+        <section class="rounded-xl bg-purple-400/10 text-white  ">
             <div
                 class="mx-auto max-w-[1340px] px-4 py-8 sm:px-6 lg:me-0 lg:py14 lg:pe-0 lg:ps-8 xl:py-22 overflow-hidden">
-                <div class="translate-x-[25%] grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
-
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-16">
 
                     <div class="-mx-6 lg:col-span-2 lg:mx-0">
                         <div id="keen-slider" class="keen-slider">
-                            <!--  testimonial_list -->
-
+                            <!-- 1st testimonial -->
                             <div class="keen-slider__slide">
                                 <blockquote
                                     class="flex h-full flex-col bg-purple-400/10 justify-between p-6 shadow-sm sm:p-8 lg:p-12 rounded-lg">
@@ -452,10 +469,11 @@
 
                                             <p class="mt-4 leading-relaxed text-gray-400">
                                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                                Eligendi
-                                                eveniet optio doloremque quam quo magni. Exercitationem
-                                                asperiores
-                                                repudiandae facere voluptatem alias. Provident.
+                                                Eligendi eveniet optio doloremque quam quo magni. Exercitationem
+                                                asperiores repudiandae facere voluptatem alias. Provident.
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Eligendi eveniet optio doloremque quam quo magni. Exercitationem
+                                                asperiores repudiandae facere voluptatem alias. Provident.
                                             </p>
                                         </div>
                                     </div>
@@ -625,7 +643,6 @@
 
     <script>
         // typing effect
-
         function typeWriter(textElement, text, speed) {
             let i = 0;
 
@@ -635,9 +652,9 @@
                     i++;
                     setTimeout(type, speed);
                 } else {
-                    i = 0;
-                    textElement.textContent = ''; // Reset the text content
-                    setTimeout(type, speed); // Start typing again after resetting
+                    // i = 0;
+                    // textElement.textContent = ''; // Reset the text content
+                    // setTimeout(type, speed); // Start typing again after resetting
                 }
             }
 
@@ -650,7 +667,7 @@
         textElement.textContent = ''; // Clear initial text
 
         // Call the typing function with your desired speed (adjust speed as needed)
-        typeWriter(textElement, text, 100); // Speed in milliseconds (e.g., 100ms)
+        typeWriter(textElement, text, 20); // Speed in milliseconds (e.g., 100ms)
 
 
 
