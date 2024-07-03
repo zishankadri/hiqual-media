@@ -627,6 +627,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-24{
   margin-top: 6rem;
 }
@@ -645,10 +649,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .inline-block{
@@ -918,9 +918,9 @@ video {
   background-color: rgb(0 0 0 / 0.7) !important;
 }
 
-.bg-\[\#171625\]{
+.bg-\[\#202020\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(23 22 37 / var(--tw-bg-opacity));
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
 
 .bg-cyan-400\/40{
@@ -1086,6 +1086,11 @@ video {
   color: rgb(179 92 255 / var(--tw-text-opacity));
 }
 
+.text-cyan-400{
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1099,11 +1104,6 @@ video {
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-purple-400{
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .text-transparent{
@@ -1213,12 +1213,12 @@ video {
 
 .btn-primary {
   /* @apply text-white bg-gradient-to-r from-blue-600 to-blue-500 font-medium rounded-lg text-sm px-4 py-2 hover:bg-brand; */
+  /* @apply text-white bg-[#1d182e] border border-white/30 rounded-full text-sm px-5 py-2.5 inline-block; */
   display: inline-block;
   border-radius: 9999px;
   border-width: 1px;
   border-color: rgb(255 255 255 / 0.3);
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 24 46 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / 0.05);
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.625rem;
@@ -1227,11 +1227,11 @@ video {
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity))
+  /* @apply hover:bg-[#342b52] */
 }
 
 .btn-primary:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 43 82 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / 0.4);
 }
 
 .nav-link{
@@ -1368,12 +1368,19 @@ video {
 }
 
 .tech-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   background-color: rgb(255 255 255 / 0.05);
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+.tech-card img{
+  height: 2rem;
 }
 
 .hover\:\!bg-black\/80:hover{
