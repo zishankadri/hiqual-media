@@ -671,7 +671,6 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.getElementsByClassName("hamburger")[0];
-            const nav = document.querySelector("nav");
             const navLinks = document.getElementsByClassName("nav-links")[0];
             const navLinkItems = document.querySelectorAll('.nav-link a');
 
@@ -691,8 +690,10 @@
                     if (targetElement) {
                         targetElement.scrollIntoView({ behavior: 'smooth' });
                     }
-                    // Close the navigation menu
-                    navLinks.style.display = "none";
+                    var style = window.getComputedStyle(navLinks);
+                    if (style.flexDirection === 'column') {
+                        navLinks.style.display = "none";
+                    }
                 });
             });
         });
