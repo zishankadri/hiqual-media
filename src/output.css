@@ -687,8 +687,8 @@ video {
   height: 2rem;
 }
 
-.h-\[450px\]{
-  height: 450px;
+.h-\[600px\]{
+  height: 600px;
 }
 
 .h-full{
@@ -1022,12 +1022,12 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-4{
-  padding-top: 1rem;
-}
-
 .pt-24{
   padding-top: 6rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
 }
 
 .text-center{
@@ -1083,10 +1083,6 @@ video {
 
 .font-medium{
   font-weight: 500;
-}
-
-.font-semibold{
-  font-weight: 600;
 }
 
 .leading-relaxed{
@@ -1433,11 +1429,6 @@ video {
 
   .sm\:p-8{
     padding: 2rem;
-  }
-
-  .sm\:px-32{
-    padding-left: 8rem;
-    padding-right: 8rem;
   }
 
   .sm\:px-6{
