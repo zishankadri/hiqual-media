@@ -902,7 +902,7 @@ video {
 
 .border-brand-light{
   --tw-border-opacity: 1;
-  border-color: rgb(179 92 255 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-gray-700{
@@ -1105,7 +1105,7 @@ video {
 
 .text-brand-light{
   --tw-text-opacity: 1;
-  color: rgb(179 92 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-cyan-400{
@@ -1498,7 +1498,7 @@ nav{
 
 .hover\:bg-brand-light:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(179 92 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-800:hover{
