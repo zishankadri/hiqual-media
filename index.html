@@ -61,8 +61,8 @@
             <div 
                 class="absolute w-[20%] aspect-square bg-cyan-400/40 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
             </div>
-            <h1>
-                <span class="relative text-6xl text-center text-gray-300 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+            <h1 class="text-center">
+                <span class="bg-red-600 relative text-6xl text-center text-gray-300 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
                     Solutions.
                     Designs.
                     Innovation.
@@ -89,9 +89,9 @@
 
     <!-- Technologies -->
     <div class="home-container relative flex flex-col sm:flex-row-reverse gap-8 w-full items-start">
-        <div class="sm:w-[40%]">
-            <h1 class="text-4xl">Technologies We Use</h1>
-            <p class="text-gray-400 mt-4">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
+        <div class="flex flex-col items-center sm:block sm:w-[40%]">
+            <h1 class="text-3xl sm:text-4xl">Technologies We Use</h1>
+            <p class="text-gray-400 mt-4 text-center sm:text-start">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
             <a href="#projects" class="group btn-primary btn-23 inline-block cursor-pointer mt-16">
                 <span class="text">Projects </span>
                 <span > <i class="fa-solid fa-chevron-right group-hover:translate-x-2 duration-200 text-xs text-gray-400 ml-2"> </i></span>
@@ -125,7 +125,9 @@
             <div class="tech-card"> 
                 <img src="./images/skills/angular.png" alt="">
             </div>
-
+            <div class="tech-card sm:hidden"> 
+                <img src="./images/skills/docker.svg" alt="">
+            </div>
         </div>
 
     </div>
@@ -162,8 +164,6 @@
             </h1>
         </div>
     </div>
-
-
     <div class="home-container px-16 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-[1600px]">
         <!-- web design -->
         <div class="services-container">
@@ -346,31 +346,31 @@
             </div>
         </div>
 
-        <div class="project-box project-img service-container-box project-container">
+        <div class="project-box project-img ">
             <div>
                 <img src="images/projects/project2.png" alt="">
             </div>
         </div>
 
-        <div class="project-box project-img service-container-box project-container">
+        <div class="project-box project-img ">
             <div>
                 <img src="images/projects/project3.png" alt="">
             </div>
         </div>
 
-        <div class="project-box project-img service-container-box project-container">
+        <div class="project-box !hidden lg:!flex">
             <div>
                 <img src="images/projects/project4.png" alt="">
             </div>
         </div>
 
-        <div class="project-box project-img service-container-box project-container">
+        <div class="project-box !hidden lg:!flex ">
             <div>
                 <img src="images/projects/project5.png" alt="">
             </div>
         </div>
 
-        <div class="project-box project-img service-container-box project-container">
+        <div class="project-box !hidden lg:!flex">
             <div>
                 <img src="images/projects/project6.png" alt="">
             </div>
@@ -629,10 +629,10 @@
             </div>
     
             <div class="flex flex-col items-center">
-                <p>
+                <p class="text-center">
                     &copy;2024 Hiqual Solutions | All Rights Reserved
                 </p>
-                <p>
+                <p class="text-center">
                     All Right Reserved.
                 </p>
             </div>
