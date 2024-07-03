@@ -36,7 +36,7 @@
         </ul>
 
         <a href="https://calendly.com/chougleanas32/targeted-growth-marketing-web-development" 
-            class="btn-home !text-base border-t !border-blue-400">
+            class="btn-home hidden sm:flex !text-base border-t !border-blue-400">
             Book A Call
         </a>
 
@@ -54,19 +54,17 @@
 
         <!-- <img src="./images/3d-casual-life-guest-in-coffee-shop.png" alt="" class="responsive-image rounded-xl"> -->
 
-        <div class="flex flex-col gap-8 items-center ">
+        <div class="flex flex-col gap-8 items-center">
             <div 
                 class="absolute w-[20%] aspect-square bg-purple-400/40 top-0 left-0 translate-x-[-20%] translate-y-[-20%] blur-3xl rounded-full -z-10">
             </div>
             <div 
                 class="absolute w-[20%] aspect-square bg-cyan-400/40 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
             </div>
-            <h1 class="relative text-6xl text-gray-300">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+            <h1 class="relative text-6xl text-center text-gray-300 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
                     Solutions.
                     Designs.
                     Innovation.
-                </span>
             </h1>
 
             <div class="fixed-size">
@@ -87,9 +85,17 @@
 
     </div> <!-- HOME -->
 
-    
-    <div class="home-container relative flex gap-8 w-full items-start">
-        <div class="grid grid-cols-3 gap-4 w-full">
+    <!-- Technologies -->
+    <div class="home-container relative flex flex-col sm:flex-row-reverse gap-8 w-full items-start">
+        <div class="sm:w-[40%]">
+            <h1 class="text-4xl">Technologies We Use</h1>
+            <p class="text-gray-400 mt-4">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
+            <a href="#projects" class="group btn-primary btn-23 inline-block cursor-pointer mt-16">
+                <span class="text">Projects </span>
+                <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
             <div class="tech-card">
                 <img src="./images/skills/django-logo.svg" alt="">
             </div>
@@ -119,14 +125,7 @@
             </div>
 
         </div>
-        <div class="w-[40%]">
-            <h1 class="text-4xl">Technologies We Use</h1>
-            <p class="text-gray-400 mt-4">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
-            <a href="#projects" class="group btn-primary btn-23 inline-block cursor-pointer mt-16">
-                <span class="text">Projects </span>
-                <span class="translate-x-2" > <i class="fa-solid fa-chevron-right text-xs text-gray-400 ml-2"> </i></span>
-            </a>
-        </div>
+
     </div>
 
     <!-- about us  -->
@@ -162,7 +161,8 @@
         </div>
     </div>
 
-    <div class="home-container px-16 grid grid-cols-2 gap-4 mt-8 max-w-[1600px]">
+
+    <div class="home-container px-16 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-[1600px]">
         <!-- web design -->
         <div class="services-container">
             <img src="images/Web Development.png" alt="">
@@ -246,7 +246,7 @@
     </div>
 
 
-    <div class="home-container grid grid-cols-3 mt-8 gap-5">
+    <div class="home-container grid grid-cols-1 sm:grid-cols-3 mt-8 gap-5">
         <!-- diamond -->
         <div class="box">
             <img src="images/diamond-dark-mode--unscreen.gif" alt="">
@@ -338,8 +338,7 @@
         </div>
     </div>
 
-    <!-- PROJECT -->
-    <div class="home-container w-full grid grid-cols-3 gap-5 mt-8">
+    <div class="home-container w-full grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8">
 
         <div class="project-box group">
             <div>
@@ -488,7 +487,7 @@
                                     </div>
 
                                     <footer class="mt-4 text-sm font-medium text-gray-400 sm:mt-6">
-                                        &mdash; Sarah Davis
+                                        &mdash; Aarav Sharma
                                     </footer>
                                 </blockquote>
                             </div>
@@ -545,7 +544,7 @@
                                     </div>
 
                                     <footer class="mt-4 text-sm font-medium text-gray-400 sm:mt-6">
-                                        &mdash; Michael Roberts
+                                        &mdash; Rohit Mehta
                                     </footer>
                                 </blockquote>
                             </div>
