@@ -71,7 +71,7 @@
 } */
 
 .services-container {
-    @apply border border-white/30 bg-white/5 p-8 rounded-3xl flex flex-col gap-4 items-start;
+    @apply border border-white/30 bg-white/5 p-8 rounded-[2rem] flex flex-col gap-4 items-start;
 }
 
 .service-img {
