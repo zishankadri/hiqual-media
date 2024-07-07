@@ -96,6 +96,7 @@ nav {
 
 .services-container {
     @apply border border-white/30 bg-white/5 p-8 rounded-[2rem] flex flex-col gap-4 items-start;
+    @apply hover:shadow-xl duration-300 hover:shadow-purple-400/30 hover:border-purple-400/50
 }
 
 .service-img {
