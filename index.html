@@ -12,6 +12,10 @@
     <link href="./fontawsome/css/brands.css" rel="stylesheet">
     <link href="./fontawsome/css/solid.css" rel="stylesheet">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.5/build/player/lottie.min.js"></script> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
@@ -24,7 +28,9 @@
         cursor: url('./images/cursor.svg'), auto;
     }
 </style>
-<body class="bg-custom bg-[#202020] text-white flex flex-col justify-center items-center font-poppins">
+<!-- <body class="bg-custom bg-[#202020] text-white flex flex-col justify-center items-center font-poppins"> -->
+<body class="bg-custom bg-[#101010] text-white flex flex-col justify-center items-center font-poppins ">
+    <!-- <body class="bg-custom bg-[#0A0A0A] text-white flex flex-col justify-center items-center font-poppins "> -->
 
     <!-- Navigation Bar -->
     <nav id="bg-color"
@@ -58,15 +64,17 @@
 
     <!-- HOME -->
     <div id="home" class="flex flex-col lg:flex-row lg:gap-16 h-[600px] justify-center items-center gap-16 overflow-hidden">
-        <div class="flex flex-col gap-8 items-center">
+        <div class="flex flex-col gap-8 items-center ">
             <div 
                 class="absolute w-[20%] aspect-square bg-purple-400/40 top-0 left-0 translate-x-[-20%] translate-y-[-20%] blur-3xl rounded-full -z-10">
             </div>
+
             <div 
                 class="absolute w-[20%] aspect-square bg-cyan-400/40 bottom-0 right-0 translate-y-[20%] blur-3xl rounded-full -z-10">
             </div>
+            
             <h1 class="text-center">
-                <span class="bg-red-600 relative text-6xl text-center text-gray-300 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+                <span class="relative text-6xl text-center gradient-text !font-poppins !not-italic">
                     Solutions.
                     Designs.
                     Innovation.
@@ -79,7 +87,7 @@
                 </p>
             </div>
 
-            <div class="relative flex gap-8 pt-4">                
+            <div class="relative flex gap-8 pt-4 md:pt-12">
                 <a href="https://calendly.com/hiqualsoftwaresolutions/30min"
                     class="btn-home !text-base border-t w-full !border-blue-400">
                     Book A Call
@@ -93,7 +101,9 @@
     <!-- Technologies -->
     <div class="home-container relative flex flex-col sm:flex-row-reverse gap-8 w-full items-start">
         <div class="flex flex-col items-center sm:block sm:w-[40%]">
-            <h1 class="text-3xl sm:text-4xl">Technologies We Use</h1>
+            <h1 class="text-3xl sm:text-4xl"> 
+                <span class="gradient-text ">Technologies</span> We Use
+            </h1>
             <p class="text-gray-400 mt-4 text-center sm:text-start">Discover the advanced technologies that drive our solutions, ensuring performance, reliability, and innovation.</p>
             <a href="#projects" class="group btn-primary btn-23 inline-block mt-16">
                 <span class="text">Projects </span>
@@ -135,250 +145,282 @@
 
     </div>
 
-    <!-- about us  -->
-    <div id="about-us" class="home-container pt-40 flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
-        <img src="images/3d-casual-life.png" alt="" class="w-[50%] self-center">
 
-        <div class="p-8 rounded-3xl border border-white/30 bg-white/5">
-            <h1 class="text-4xl pt-2">
-                About Us
+    <!-- About Us  -->
+    <div id="about-us" class="home-container pt-60 ">
+        <div class="text-center">
+            <h1 class="heading">
+                Who <span class="gradient-text">we</span> are
             </h1>
-            </p>
-            <p class="mt-4">
-                We build to your be spoke
-            </p>
-            <p class="my-4">
-                Welcome to HiQual Solutions, your premier destination for top-notch freelancing services.
-                At HiQual Solutions, we pride ourselves on delivering high-quality solutions tailored to your
-                unique needs. Our team of expert freelancers specializes in a diverse range of skills, ensuring that every project we undertake meets the highest standards of excellence.
-            </p>
-            <a href="#services" class="group btn-primary btn-23 inline-block mt-4">
-                <span class="text">Services </span>
-                <span class="translate-x-2" > <i class="fa-solid fa-chevron-right group-hover:translate-x-2 duration-200 text-xs text-gray-400 ml-2"> </i></span>
-            </a>
         </div>
+        <div 
+        class="mt-12 flex flex-col lg:flex-row items-start gap-8 rounded-3xl p-16
+        bg-gradient-to-r from-purple-500 to-cyan-500">
+            <img src="images/3d-casual-life.png" alt="" class="w-[50%] self-center">
+
+            <div class="text-2xl text-justify ">
+                <h1 class="font-semibold text-xl pt-2 leading-relaxed drop-shadow-2xl">
+                    ● About Us
+                </h1>
+                </p>
+                <p class="mt-4">
+                    We build to your be spoke
+                </p>
+                <p class="my-4 ">
+                    Welcome to HiQual Solutions, your premier destination for top-notch freelancing services.
+                    At HiQual Solutions, we pride ourselves on delivering high-quality solutions tailored to your
+                    unique needs. Our team of expert freelancers specializes in a diverse range of skills, ensuring that every project we undertake meets the highest standards of excellence.
+                </p>
+                <a href="#services" class="group btn-primary text-white btn-23 inline-block mt-4">
+                    <span class="text">Services </span>
+                    <span class="translate-x-2" > <i class="fa-solid fa-chevron-right group-hover:translate-x-2 duration-200 text-xs text-white ml-2"> </i></span>
+                </a>
+            </div>
+        </div>
+
     </div>
+
 
     <!-- SERVICES -->
-    <div class="home-container pt-40 !flex-col service-box" id="services">
-        <div class="text-center">
-            <h1 class="text-4xl">
-                Services
-            </h1>
-        </div>
-    </div>
-    
-    <div class="home-container px-16 grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 max-w-[1600px]">
-        <!-- web design -->
-        <div class="services-container">
-            <img src="images/Web Development.png" alt="">
-            <div>
-                <h1 class="text-4xl">Web Design & Development</h1>
-            </div>
-            <div>
-                <p>
-                    Best if you need beautiful design & rapid development on a regular basis.
-                </p>
-            </div>
-            <!-- <div class="service-conatiner-button">
-                <a class="group btn-primary mt-4">
-                    Learn More 
-                    <span> <i class="fa-solid fa-chevron-right group-hover:translate-x-2 duration-200 text-xs text-gray-400 ml-2"> </i></span>
-                </a>
-            </div> -->
-        </div>
-
-        <!-- web management -->
-        <div class="services-container">
-            <img src="images/Web Development.png" alt="">
-            <div>
-                <h1 class="text-4xl">CRM and application development</h1>
-            </div>
-            <div>
-                <p>
-                    At HiQual Solutions, we specialize in developing custom CRM solutions and applications that streamline your business processes and enhance customer interactions.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- system management -->
-        <div class="services-container">
-            <img src="images/Website Management.png" alt="">
-            <div>
-                <h1 class="text-4xl">Custom Chatbots</h1>
-            </div>
-            <div>
-                <p>
-                    Transform your business with our Custom Chatbots. Tailored to your needs, our AI-powered solutions streamline operations, enhance customer interactions, and integrate seamlessly. Scale effortlessly and stay ahead with our reliable support.
-                </p>
+    <div class="relative home-container pt-60 w-full">
+        <div class="absolute w-full max-w-[1600px] flex items-center justify-center select-none top-[50%] translate-y-[-50%] left-0 -z-20">
+            <div class="w-[45rem] h-[45rem] flex-shrink-0 rounded-full bg-purple-400 bg-opacity-60 filter blur-[250px]">
             </div>
         </div>
-
-        <!-- Website Management -->
-        <div class="services-container">
-            <img src="images/Website Management.png" alt="">
-            <div>
-                <h1 class="text-4xl">Website Management</h1>
+        <div class="flex-col service-box" id="services">            
+            <div class="text-center">
+                <h1 class="heading">
+                    What we offer <span class="gradient-text">offer</span>
+                </h1>
             </div>
-            <div>
-                <p>
-                    where innovation meets user-centric design. We specialize in creating bespoke applications that elevate user experiences and meet your business objectives seamlessly.
-                </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 md:mt-12">
+            <!-- web design -->
+            <div class="services-container">
+                <img src="images/Web Development.png" alt="">
+                <div>
+                    <h1 class="text-4xl">Web Design & Development</h1>
+                </div>
+                <div>
+                    <p>
+                        Best if you need beautiful design & rapid development on a regular basis.
+                    </p>
+                </div>
+                <!-- <div class="service-conatiner-button">
+                    <a class="group btn-primary mt-4">
+                        Learn More 
+                        <span> <i class="fa-solid fa-chevron-right group-hover:translate-x-2 duration-200 text-xs text-gray-400 ml-2"> </i></span>
+                    </a>
+                </div> -->
             </div>
 
-        </div>
-    </div>
+            <!-- web management -->
+            <div class="services-container">
+                <img src="images/Web Development.png" alt="">
+                <div>
+                    <h1 class="text-4xl">CRM and application development</h1>
+                </div>
+                <div>
+                    <p>
+                        At HiQual Solutions, we specialize in developing custom CRM solutions and applications that streamline your business processes and enhance customer interactions.
+                    </p>
+                </div>
 
+            </div>
 
-    <div class="home-container pt-40 flex-col service-box" id="services">
-        <div class="text-center">
-            <h1 class="text-4xl">
-                Why choose US?
-            </h1>
+            <!-- system management -->
+            <div class="services-container">
+                <img src="images/Website Management.png" alt="">
+                <div>
+                    <h1 class="text-4xl">Custom Chatbots</h1>
+                </div>
+                <div>
+                    <p>
+                        Transform your business with our Custom Chatbots. Tailored to your needs, our AI-powered solutions streamline operations, enhance customer interactions, and integrate seamlessly. Scale effortlessly and stay ahead with our reliable support.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Website Management -->
+            <div class="services-container">
+                <img src="images/Website Management.png" alt="">
+                <div>
+                    <h1 class="text-4xl">Website Management</h1>
+                </div>
+                <div>
+                    <p>
+                        where innovation meets user-centric design. We specialize in creating bespoke applications that elevate user experiences and meet your business objectives seamlessly.
+                    </p>
+                </div>
+
+            </div>
         </div>
+
     </div>
 
-
-    <div class="home-container grid grid-cols-1 sm:grid-cols-3 mt-8 gap-5">
-        <!-- diamond -->
-        <div class="box">
-            <img src="images/diamond-dark-mode--unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">Top-notch quality</h2>
-            </div>
-            <div>
-                <p>
-                    HiQual Solutions delivers excellence in every project, ensuring top-tier results through meticulous attention to detail and innovative solutions.
-                </p>
+    <!-- Reasonse you will love us -->
+        </div>
+    <div class="home-container pt-60">
+        <div class="flex-col service-box">
+            <div class="text-center">
+                <h1 class="heading">
+                    Reasons you will <span class="gradient-text">love</span> us.
+                </h1>
             </div>
         </div>
 
-        <!-- clock -->
-        <div class="box">
-            <img src="images/clock-ldark-mode-unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">Lightning fast delivery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 mt-12 gap-5">
+            <!-- diamond -->
+            <div class="box">
+                <img src="images/diamond-dark-mode--unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">Top-notch quality</h2>
+                </div>
+                <div>
+                    <p>
+                        HiQual Solutions delivers excellence in every project, ensuring top-tier results through meticulous attention to detail and innovative solutions.
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    We ensure your projects are completed swiftly without compromising quality. Expect prompt, efficient service every time.
-                </p>
-            </div>
-        </div>
 
-        <!-- drop -->
-        <div class="box">
-            <img src="images/drop-dark-mode-unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">Fixed monthly rate</h2>
+            <!-- clock -->
+            <div class="box">
+                <img src="images/clock-ldark-mode-unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">Lightning fast delivery</h2>
+                </div>
+                <div>
+                    <p>
+                        We ensure your projects are completed swiftly without compromising quality. Expect prompt, efficient service every time.
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    high-quality services at a predictable, fixed monthly rate. Enjoy peace of mind with no hidden fees or surprises.
-                </p>
-            </div>
-        </div>
 
-        <!-- file -->
-        <div class="box">
-            <img src="images/file-dark-mode-unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">No obligation contract</h2>
+            <!-- drop -->
+            <div class="box">
+                <img src="images/drop-dark-mode-unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">Fixed monthly rate</h2>
+                </div>
+                <div>
+                    <p>
+                        high-quality services at a predictable, fixed monthly rate. Enjoy peace of mind with no hidden fees or surprises.
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    We offer flexible services with no obligation contracts. Enjoy the freedom to scale your projects without long-term commitments.
-                </p>
-            </div>
-        </div>
 
-        <!-- saving -->
-        <div class="box">
-            <img src="images/saving-dark-mode--unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">30-Days refund policy</h2>
+            <!-- file -->
+            <div class="box">
+                <img src="images/file-dark-mode-unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">No obligation contract</h2>
+                </div>
+                <div>
+                    <p>
+                        We offer flexible services with no obligation contracts. Enjoy the freedom to scale your projects without long-term commitments.
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    flexible services with no obligation contracts. Enjoy the freedom to scale your projects without long-term commitments.
-                </p>
-            </div>
-        </div>
 
-        <!-- customer -->
-        <div class="box">
-            <img src="images/customer-dark-mode-unscreen.gif" alt="">
-            <div>
-                <h2 class="text-2xl">Excellent customer support</h2>
+            <!-- saving -->
+            <div class="box">
+                <img src="images/saving-dark-mode--unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">30-Days refund policy</h2>
+                </div>
+                <div>
+                    <p>
+                        flexible services with no obligation contracts. Enjoy the freedom to scale your projects without long-term commitments.
+                    </p>
+                </div>
             </div>
-            <div>
-                <p>
-                    At HiQual Solutions, we provide exceptional customer support, ensuring your needs are met promptly and professionally.
-                </p>
-            </div>
-        </div>
 
+            <!-- customer -->
+            <div class="box">
+                <img src="images/customer-dark-mode-unscreen.gif" alt="">
+                <div>
+                    <h2 class="text-2xl">Excellent customer support</h2>
+                </div>
+                <div>
+                    <p>
+                        At HiQual Solutions, we provide exceptional customer support, ensuring your needs are met promptly and professionally.
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
     <!-- PROJECT -->
-    <div class="home-container pt-40 !flex-col service-box" id="projects">
-        <div class="text-center">
+    <div class="home-container pt-60 w-full">
 
-            <h1 class="text-4xl">
-                Work samples !
-            </h1>
+        <div class="!flex-col service-box" id="projects">
+            <div class="text-center">
+                <h1 class="heading">
+                    Our work,
+                    <span class="gradient-text font-normal ">just check it out!</span>
+                </h1>
+            </div>
         </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8 md:mt-12">
+
+            <div class="project-box group">
+                <div>
+                    <img src="images/projects/project1.png" alt="">
+                </div>
+            </div>
+
+            <div class="project-box project-img ">
+                <div>
+                    <img src="images/projects/project2.png" alt="">
+                </div>
+            </div>
+
+            <div class="project-box project-img ">
+                <div>
+                    <img src="images/projects/project3.png" alt="">
+                </div>
+            </div>
+
+            <div class="project-box !hidden lg:!flex">
+                <div>
+                    <img src="images/projects/project4.png" alt="">
+                </div>
+            </div>
+
+            <div class="project-box !hidden lg:!flex ">
+                <div>
+                    <img src="images/projects/project5.png" alt="">
+                </div>
+            </div>
+
+            <div class="project-box !hidden lg:!flex">
+                <div>
+                    <img src="images/projects/project6.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="home-container w-full grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8">
-
-        <div class="project-box group">
-            <div>
-                <img src="images/projects/project1.png" alt="">
-            </div>
-        </div>
-
-        <div class="project-box project-img ">
-            <div>
-                <img src="images/projects/project2.png" alt="">
-            </div>
-        </div>
-
-        <div class="project-box project-img ">
-            <div>
-                <img src="images/projects/project3.png" alt="">
-            </div>
-        </div>
-
-        <div class="project-box !hidden lg:!flex">
-            <div>
-                <img src="images/projects/project4.png" alt="">
-            </div>
-        </div>
-
-        <div class="project-box !hidden lg:!flex ">
-            <div>
-                <img src="images/projects/project5.png" alt="">
-            </div>
-        </div>
-
-        <div class="project-box !hidden lg:!flex">
-            <div>
-                <img src="images/projects/project6.png" alt="">
-            </div>
-        </div>
-
-    </div>
-
 
     <!-- TESTIMONIALS -->
-    <div class="home-container pt-40" id="testimonials">
+    <div class="home-container pt-60" id="testimonials">
 
-        <h3 class="text-4xl mb-6 md:mb-8 text-center headings-weight text-dark-100 dark:text-grey-500">
-            What they say about us</h3>
-
+        <!-- <h3 class="text-4xl mb-6 md:mb-8 text-center headings-weight text-dark-100 dark:text-grey-500"> -->
+        <!-- </h3> -->
+        <div class="!flex-col service-box mb-12" id="projects">
+            <div class="text-center">
+                <h1 class="heading">
+                    <span class="gradient-text font-normal">What they say</span>
+                    about us
+                </h1>
+            </div>
+        </div>
+    
         <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 
         <script type="module">
@@ -686,7 +728,7 @@
 
 
     <!-- CONTACT -->
-    <div id="contact" class="pt-40">
+    <div id="contact" class="pt-60">
         <div
             class="contact bg-gray-200 text-gray-700 rounded-3xl px-6 md:px-8 lg:px-10 w-full py-16 md:py-20 lg:py-24 flex flex-col justify-center items-center gap-10">
             <h3
@@ -741,9 +783,6 @@
             <div class="flex flex-col items-center">
                 <p class="text-center">
                     &copy;2024 Hiqual Solutions | All Rights Reserved
-                </p>
-                <p class="text-center">
-                    All Right Reserved.
                 </p>
             </div>
         </footer>        

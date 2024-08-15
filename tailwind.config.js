@@ -12,6 +12,7 @@ module.exports = {
       
       fontFamily: {
         'poppins': ['Poppins'],
+        'instrumentSerif': ['Instrument Serif, serif'],
      }
     },
   },
