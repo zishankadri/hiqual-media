@@ -126,5 +126,5 @@ nav {
 
 
 .heading {
-    @apply text-2xl md:text-6xl;
+    @apply text-4xl md:text-6xl;
 }
