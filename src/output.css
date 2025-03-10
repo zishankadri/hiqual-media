@@ -745,6 +745,18 @@ video {
   width: 100%;
 }
 
+.w-24{
+  width: 6rem;
+}
+
+.min-w-8{
+  min-width: 2rem;
+}
+
+.min-w-24{
+  min-width: 6rem;
+}
+
 .max-w-\[1011px\]{
   max-width: 1011px;
 }
@@ -890,6 +902,14 @@ video {
 
 .gap-8{
   gap: 2rem;
+}
+
+.gap-11{
+  gap: 2.75rem;
+}
+
+.gap-28{
+  gap: 7rem;
 }
 
 .self-center{
@@ -1811,6 +1831,10 @@ nav{
 
   .lg\:gap-16{
     gap: 4rem;
+  }
+
+  .lg\:gap-28{
+    gap: 7rem;
   }
 
   .lg\:p-12{
